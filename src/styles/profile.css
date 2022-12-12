@@ -1,0 +1,94 @@
+.profile{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profile_bg{
+    width: 30%;
+    height: 40%;
+    position: absolute; top: 150px;
+    background-color: rgba(75, 75, 75, 0.25);
+    border-radius: 30px;
+}
+.profile_bg>svg{
+    color: #fff;
+    margin: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.profile_bg>svg:hover{
+    color: red;
+}
+.profile_content{
+    position: relative;
+    width: 30%;
+    height: 60%;
+}
+.profile_content>.pro_img{
+    position: absolute;left: 50%; top: -20%;
+    transform: translateX(-50%);
+}
+.profile_content>.pro_img>img{
+    width: 100px;
+}
+.profile_content>.pro_name{
+    position: absolute;left: 50%; top: 5%;
+    transform: translateX(-50%);
+}
+.profile_content>.pro_name>form>fieldset{border: none;}
+.profile_content>.pro_name>form>fieldset>label>.submit_update{
+    display: block;
+    position: absolute; top: 40px; left: 15px;
+
+}
+.file_add{
+    color: #fff;
+    font-size: 30px;
+    position: absolute; right: 20px; top: -155px;
+}
+.clear{
+    position: absolute; bottom: -30px; left: 25px;
+}
+.profile_content>.pro_name>span{
+    color: #fff;
+}
+
+.profile_submit{
+    z-index: 100;
+    position: absolute; left: 25px; top: 30px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+    width: 120px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    display: block;
+}
+.profile_content>.log_out{
+    cursor: pointer;
+    position: absolute;left: 50%; top: 15%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.profile_content>.log_out>span{
+    display: block;
+    color: #fff;
+    width: 120px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+    text-align: center;
+    margin-top: 40px;
+}
+.blind{
+    visibility: hidden;
+    position: absolute;
+}
